@@ -10,7 +10,7 @@
 
         <!-- Scripts -->
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="shortcut icon" href="https://is-epic.me/dist/images/logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="https://is-into.tech/dist/images/logo.png" type="image/x-icon">
     </head>
 
     <body class="p-8 max-w-md m-auto bg-zinc-900 text-white text-center">
@@ -22,7 +22,7 @@
 
                 <select name="domain" id="domain" class="block w-full px-2 py-1.5 bg-zinc-700 outline-none border-none rounded-md mb-6" required>
                     <option value="" disabled selected hidden>Choose a domain</option>
-                    <option value="is-epic.me">is-epic.me</option>
+                    <option value="is-into.tech">is-into.tech</option>
                     <option value="is-awsm.tech">is-awsm.tech</option>
                 </select>
 
@@ -50,7 +50,7 @@
             btn.setAttribute("disabled", true);
             btn.innerHTML = "Checking Domain...";
 
-            fetch(`https://api.is-epic.me/check?domain=${subdomain.value.trim().toLowerCase()}.${domain.value}`).then(res => res.json()).then(data => {
+            fetch(`https://api.is-into.tech/check?domain=${subdomain.value.trim().toLowerCase()}.${domain.value}`).then(res => res.json()).then(data => {
                 btn.removeAttribute("disabled");
                 btn.innerHTML = "Check Domain";
 
